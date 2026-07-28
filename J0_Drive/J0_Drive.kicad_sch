@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 76.2 50.165)
-		(size 57.15 46.355)
+		(at 127 88.9)
+		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "35f45dbe-0272-466f-a35a-2618a5161648")
 		(property "Sheetname" "Driver"
-			(at 76.2 49.4534 0)
+			(at 127 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "driver.kicad_sch"
-			(at 76.2 97.1046 0)
+			(at 127 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47,6 +47,52 @@
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 88.9)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a40f4853-4f1a-4fe1-9879-9487915310fd")
+		(property "Sheetname" "Power Stage"
+			(at 165.1 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_stage.kicad_sch"
+			(at 165.1 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
+					(page "3")
 				)
 			)
 		)

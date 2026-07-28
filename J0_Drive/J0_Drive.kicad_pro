@@ -648,7 +648,7 @@
         "uuid": "00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
       }
     ],
-    "used_designators": "R4-5,J3,D1-2,C2-5,#PWR5-12",
+    "used_designators": "#PWR13",
     "variants": []
   },
   "sheets": [
@@ -659,6 +659,10 @@
     [
       "35f45dbe-0272-466f-a35a-2618a5161648",
       "Driver"
+    ],
+    [
+      "a40f4853-4f1a-4fe1-9879-9487915310fd",
+      "Power Stage"
     ]
   ],
   "text_variables": {},
