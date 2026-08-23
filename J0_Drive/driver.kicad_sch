@@ -1628,6 +1628,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2283,6 +2422,12 @@
 		(uuid "6fdae1dc-35f9-4530-af9a-baed81ab9692")
 	)
 	(junction
+		(at 60.96 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74c11aae-347a-4f17-a1b2-ab7f120d1e9a")
+	)
+	(junction
 		(at 64.77 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2317,12 +2462,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6e24639-0130-4782-8de8-97c0d7d50a2e")
-	)
-	(junction
-		(at 60.96 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1d0d0f7-1e19-4ed2-a20a-f8ba00906aaa")
 	)
 	(junction
 		(at 96.52 124.46)
@@ -2654,7 +2793,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 78.74) (xy 55.88 78.74)
+			(xy 55.88 78.74) (xy 60.96 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2731,6 +2870,16 @@
 			(type default)
 		)
 		(uuid "a242022c-99ca-4680-8ab3-8e2f931b1123")
+	)
+	(wire
+		(pts
+			(xy 60.96 78.74) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a410eaa6-0708-4f05-8ae5-aa2587f800d9")
 	)
 	(wire
 		(pts
@@ -2841,16 +2990,6 @@
 			(type default)
 		)
 		(uuid "dfb23032-b3e3-4da5-b23f-54bb81c7d04d")
-	)
-	(wire
-		(pts
-			(xy 68.58 78.74) (xy 60.96 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e054e9df-e616-4693-93e2-9c2756ef1a95")
 	)
 	(wire
 		(pts
@@ -3224,6 +3363,84 @@
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/35f45dbe-0272-466f-a35a-2618a5161648"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 60.96 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0342db0c-ee36-4afa-a953-0daa5e8c95ac")
+		(property "Reference" "#PWR038"
+			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 60.96 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 60.96 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "154a7162-8708-4a81-998e-3cf33a1fa7ca")
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/35f45dbe-0272-466f-a35a-2618a5161648"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5295,84 +5512,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 60.96 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae0c4090-ad7b-47b8-aa9e-cdbe3eda8eb6")
-		(property "Reference" "#PWR05"
-			(at 60.96 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 60.96 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 60.96 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2e483056-0c74-49af-9735-cb16466898ea")
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/35f45dbe-0272-466f-a35a-2618a5161648"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 54.61 166.37 0)
 		(unit 1)
@@ -5474,7 +5613,7 @@
 				)
 			)
 		)
-		(property "Value" "VDD"
+		(property "Value" "+3.3V"
 			(at 124.46 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5630,7 +5769,7 @@
 				)
 			)
 		)
-		(property "Value" "VDD"
+		(property "Value" "+3.3V"
 			(at 134.62 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
