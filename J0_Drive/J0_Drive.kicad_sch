@@ -107,6 +107,26 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 48.26) (xy 101.6 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcf886f-a8ae-4294-b4d4-1cf78cd24fbf")
+	)
+	(wire
+		(pts
+			(xy 88.9 66.04) (xy 101.6 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a813fd-1524-4093-98aa-cdba2992d0b1")
+	)
+	(wire
+		(pts
 			(xy 177.8 96.52) (xy 190.5 96.52)
 		)
 		(stroke
@@ -114,6 +134,16 @@
 			(type default)
 		)
 		(uuid "64df4dd7-9345-410c-87ff-05fe410eed8b")
+	)
+	(wire
+		(pts
+			(xy 88.9 43.18) (xy 101.6 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bcfd46d-84a8-4944-9dba-807cdb152770")
 	)
 	(wire
 		(pts
@@ -127,6 +157,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 71.12) (xy 101.6 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ae7f97-aa49-4c79-9f8f-86e515ee007d")
+	)
+	(wire
+		(pts
 			(xy 177.8 129.54) (xy 190.5 129.54)
 		)
 		(stroke
@@ -134,6 +174,16 @@
 			(type default)
 		)
 		(uuid "768f70d6-1615-4f10-a078-e9475bb36529")
+	)
+	(wire
+		(pts
+			(xy 88.9 58.42) (xy 101.6 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77cc90f6-69d0-4997-8202-b0f1d0cc9ddb")
 	)
 	(wire
 		(pts
@@ -247,6 +297,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 53.34) (xy 101.6 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8543846-b32b-47ac-b725-971526c7254d")
+	)
+	(wire
+		(pts
 			(xy 96.52 147.32) (xy 96.52 129.54)
 		)
 		(stroke
@@ -347,7 +407,7 @@
 	)
 	(sheet
 		(at 63.5 38.1)
-		(size 25.4 50.8)
+		(size 25.4 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -373,7 +433,7 @@
 			)
 		)
 		(property "Sheetfile" "communications.kicad_sch"
-			(at 63.5 89.4846 0)
+			(at 63.5 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -381,6 +441,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CAN_RX" output
+			(at 88.9 71.12 0)
+			(uuid "20366cd0-81f3-45ab-b864-5c281ac6bdaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_TX" input
+			(at 88.9 66.04 0)
+			(uuid "88c7f385-069b-4f7f-af48-458bcc1f61fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWD_NRST" bidirectional
+			(at 88.9 43.18 0)
+			(uuid "f6c8e74a-cec4-4795-bebe-d99a236a8a96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWD_SWCLK" bidirectional
+			(at 88.9 48.26 0)
+			(uuid "f71aeaa2-6041-494f-a8f6-75b9b6f76681")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWD_SWDIO" bidirectional
+			(at 88.9 53.34 0)
+			(uuid "44a63c4f-4b3e-4f72-acca-84c67cff47c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWD_SWO" bidirectional
+			(at 88.9 58.42 0)
+			(uuid "601a14c8-dd6e-4a1b-835e-2fb9cd8720b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -765,16 +885,76 @@
 				(justify left)
 			)
 		)
+		(pin "CAN_RX" input
+			(at 101.6 71.12 180)
+			(uuid "b9085775-b57e-4c0b-8d9b-4541fdd1337a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_TX" output
+			(at 101.6 66.04 180)
+			(uuid "34295714-2b7e-4140-9f6a-8f0a6c997195")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_NRST" bidirectional
+			(at 101.6 43.18 180)
+			(uuid "0a827711-c467-4e6b-87f3-d68593aafa44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_SWCLK" bidirectional
+			(at 101.6 48.26 180)
+			(uuid "2343177c-9b00-474a-b59e-cd90895610cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_SWDIO" bidirectional
+			(at 101.6 53.34 180)
+			(uuid "54ef39cd-6645-4650-82f4-bfc642b0b981")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_SWO" bidirectional
+			(at 101.6 58.42 180)
+			(uuid "20439977-c0b2-4925-8ebe-f2f24f9e83e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
-					(page "3")
+					(page "9")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 190.5 38.1)
+		(at 63.5 88.9)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -788,8 +968,54 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "a40f4853-4f1a-4fe1-9879-9487915310fd")
-		(property "Sheetname" "HalfBridgeA"
+		(uuid "a48d5ad2-7f28-431e-aea3-372e724af95b")
+		(property "Sheetname" "Sensors"
+			(at 63.5 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 63.5 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 38.1)
+		(size 25.4 101.6)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b0e558b5-dfd9-4dee-aa57-dee08bb4dc56")
+		(property "Sheetname" "Inverter"
 			(at 190.5 37.3884 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -800,113 +1026,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "halfbridge.kicad_sch"
-			(at 190.5 64.0846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "BOOT" input
-			(at 190.5 48.26 180)
-			(uuid "6d27f95d-12ad-439d-862f-477174acca1c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GH" input
-			(at 190.5 43.18 180)
-			(uuid "af73397a-349e-4dd9-9bc8-a537699d195d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GL" input
-			(at 190.5 58.42 180)
-			(uuid "7b59afe7-16bf-4f5e-a4c5-bab2702dfec8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ISENSE" output
-			(at 215.9 53.34 0)
-			(uuid "8310a8d4-be22-496c-9949-712b9c6bf834")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OUT" input
-			(at 190.5 53.34 180)
-			(uuid "62fc6e31-e8d0-417a-9273-fa92cd39743f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PHASE" output
-			(at 215.9 48.26 0)
-			(uuid "4cf26dd5-01c7-4bbf-a836-e731f2639eb2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 190.5 114.3)
-		(size 25.4 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "d66ba217-65c9-4b4f-a08f-9a2e681a19be")
-		(property "Sheetname" "HalfBridgeC"
-			(at 190.5 113.5884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "halfbridge.kicad_sch"
+		(property "Sheetfile" "inverter.kicad_sch"
 			(at 190.5 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -917,9 +1037,9 @@
 				(justify left top)
 			)
 		)
-		(pin "BOOT" input
-			(at 190.5 124.46 180)
-			(uuid "a0e3591c-913b-4c4a-b894-bf0195fe6983")
+		(pin "BOOT_A" input
+			(at 190.5 48.26 180)
+			(uuid "ff85f8ab-91a7-49de-ab36-85eeded2ea82")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,105 +1047,9 @@
 				(justify left)
 			)
 		)
-		(pin "GH" input
-			(at 190.5 119.38 180)
-			(uuid "4e64c92f-0913-484f-bf56-daecd9435b75")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GL" input
-			(at 190.5 134.62 180)
-			(uuid "d0be2186-8001-44a8-97f7-b4ad35a8ca89")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ISENSE" output
-			(at 215.9 129.54 0)
-			(uuid "7218a4c4-7dd8-44b2-b4be-4c34ed9b91c9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OUT" input
-			(at 190.5 129.54 180)
-			(uuid "e5384df5-e32d-4343-904a-695aa5791b7c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PHASE" output
-			(at 215.9 124.46 0)
-			(uuid "a0143d7f-46ee-4409-9a14-28e91254ab14")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 190.5 76.2)
-		(size 25.4 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "dfd59c71-db36-4498-b5fe-0fcfcd1716f4")
-		(property "Sheetname" "HalfBridgeB"
-			(at 190.5 75.4884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "halfbridge.kicad_sch"
-			(at 190.5 102.1846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "BOOT" input
+		(pin "BOOT_B" input
 			(at 190.5 86.36 180)
-			(uuid "6f0987b6-a3a1-456c-8151-30380f6ecebb")
+			(uuid "61d24930-bd8f-4a35-94e0-edf8949e4a2b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,9 +1057,29 @@
 				(justify left)
 			)
 		)
-		(pin "GH" input
+		(pin "BOOT_C" input
+			(at 190.5 124.46 180)
+			(uuid "fef5901e-077d-4db9-92d9-04ad13f1bddf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GH_A" input
+			(at 190.5 43.18 180)
+			(uuid "12313e4a-46f5-4ca3-b9f9-c9086fb3036f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GH_B" input
 			(at 190.5 81.28 180)
-			(uuid "6206e485-bbba-4ee4-8574-86e2789fbf8f")
+			(uuid "eed02b87-5d3c-4ef5-9777-51518d0de43a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1043,9 +1087,29 @@
 				(justify left)
 			)
 		)
-		(pin "GL" input
+		(pin "GH_C" input
+			(at 190.5 119.38 180)
+			(uuid "8a780849-4de2-4963-a902-ae71ff2ff3cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GL_A" input
+			(at 190.5 58.42 180)
+			(uuid "ff1478fa-87d5-4c18-9acc-f80fb095e3ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GL_B" input
 			(at 190.5 96.52 180)
-			(uuid "fd7b5a17-42f8-4ad1-a5bd-c59a57745708")
+			(uuid "fa659a1a-80ac-4e70-974d-7e332dc621df")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1053,9 +1117,29 @@
 				(justify left)
 			)
 		)
-		(pin "ISENSE" output
+		(pin "GL_C" input
+			(at 190.5 134.62 180)
+			(uuid "d8786322-a9f8-4cb8-b470-458aea66286c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ISENSE_A" output
+			(at 215.9 53.34 0)
+			(uuid "425d03c0-10ce-4470-8ff6-2e2ad37d05b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISENSE_B" output
 			(at 215.9 91.44 0)
-			(uuid "c264425f-7371-4686-a728-ea866519c282")
+			(uuid "d751ae06-ee82-4209-b168-cdc7938c73f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1063,9 +1147,19 @@
 				(justify right)
 			)
 		)
-		(pin "OUT" input
-			(at 190.5 91.44 180)
-			(uuid "852329a5-a07c-4fd0-bcc4-5d32c8756069")
+		(pin "ISENSE_C" output
+			(at 215.9 129.54 0)
+			(uuid "94619e0f-c996-4442-8ff5-dd805da5d6a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT_A" input
+			(at 190.5 53.34 180)
+			(uuid "bcd7e382-eea4-4f6a-ba0f-083a86723fd1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1073,20 +1167,30 @@
 				(justify left)
 			)
 		)
-		(pin "PHASE" output
-			(at 215.9 86.36 0)
-			(uuid "63ef917e-2d4c-4b2d-b79e-e1e23f9c83f7")
+		(pin "OUT_B" input
+			(at 190.5 91.44 180)
+			(uuid "5b6231e3-b544-440c-bfcb-5809bb1d9c43")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+			)
+		)
+		(pin "OUT_C" input
+			(at 190.5 129.54 180)
+			(uuid "384a9459-d636-4a16-9a1c-b71aa0b65b56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
-					(page "5")
+					(page "3")
 				)
 			)
 		)
