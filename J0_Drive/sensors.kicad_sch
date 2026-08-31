@@ -160,6 +160,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Thermistor_NTC"
 			(pin_numbers
 				(hide yes)
@@ -1132,9 +1272,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Thermistor and voltage divider"
+	(text "Thermistor and voltage divider\n\nV_ADC = V_CC * ( R_fixed / ( R_NTC + R_fixed) )\nR_NTC = R_fixed * ( ( V_CC / V_ADC ) - 1\nR_NTC = 10k * ( ( 3.3 / V_ADC ) - 1 ) \n\n1/T = 1/T_0 + (1/B) * ln ( R / R_0 )\nR_0 = 10kOhm (at 25C)\nT_0 = 298.15K (25C)\nB = 3950 K\n\nTEMP | R_NTC | ADC_V\n25C  | 10.0k | 1.65\n60C  | 2.49k | 2.64\n80C  | 1.27k | 2.93\n100C | 0.70k | 3.08"
 		(exclude_from_sim no)
-		(at 59.69 123.444 0)
+		(at 68.58 103.632 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1156,7 +1296,7 @@
 	)
 	(text "Temperature Sensing"
 		(exclude_from_sim no)
-		(at 59.182 120.904 0)
+		(at 56.134 101.092 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1211,6 +1351,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea7dad63-b227-44e2-8ca7-74e44125bb8b")
+	)
+	(junction
+		(at 57.15 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4e97ba6-24f3-4c99-82b7-757678ea4684")
 	)
 	(wire
 		(pts
@@ -1324,6 +1470,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 132.08) (xy 57.15 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56174501-bd86-4795-bf76-770355e7afdc")
+	)
+	(wire
+		(pts
 			(xy 60.96 48.26) (xy 60.96 49.53)
 		)
 		(stroke
@@ -1364,6 +1520,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 124.46) (xy 57.15 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a0810e7-d416-49b0-955e-6c40579b4be5")
+	)
+	(wire
+		(pts
 			(xy 78.74 58.42) (xy 88.9 58.42)
 		)
 		(stroke
@@ -1384,6 +1550,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 121.92) (xy 60.96 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b02eee5-4a72-4f91-9492-5298e539c5b5")
+	)
+	(wire
+		(pts
 			(xy 101.6 73.66) (xy 107.95 73.66)
 		)
 		(stroke
@@ -1391,6 +1567,16 @@
 			(type default)
 		)
 		(uuid "a1697455-e05d-44a9-a01c-022657730a9e")
+	)
+	(wire
+		(pts
+			(xy 57.15 113.03) (xy 57.15 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5942dfa-2822-4077-80e8-cde87ec5836a")
 	)
 	(wire
 		(pts
@@ -1484,6 +1670,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 121.92) (xy 57.15 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5517751-ccb4-43de-8bcd-a91ec736b781")
+	)
+	(wire
+		(pts
 			(xy 101.6 83.82) (xy 107.95 83.82)
 		)
 		(stroke
@@ -1493,7 +1689,8 @@
 		(uuid "fd65937e-35e5-4ed7-8298-e782442ba00f")
 	)
 	(image
-		(at 161.29 48.26)
+		(at 142.24 44.45)
+		(scale 0.60778)
 		(uuid "b58dc080-02fa-4db5-8392-638e70cfd679")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAwwAAAKGCAIAAABoQYsmAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdd2AUZfoH8Gdma8omm95ISANCQgsQmgKhg6A0KSJNxIa9nKc/C6KeYjnQu/M8ARUQFVR6D006"
@@ -2033,7 +2230,8 @@
 		)
 	)
 	(image
-		(at 161.29 100.33)
+		(at 147.32 78.74)
+		(scale 0.738521)
 		(uuid "f085c578-39fd-456b-a106-af63aadd350f")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAxgAAAIICAIAAABivt8cAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOydd0AURxfA3+3t3h396M0CiChWBEQUQbFi7yb2GjVNjTWJscSSGLsxXxKjxhJjSexdE8ResCBd"
@@ -2983,6 +3181,17 @@
 		)
 		(uuid "664d4e8b-a0cc-4a31-97e8-c6dd44e41dde")
 	)
+	(hierarchical_label "T_OUT"
+		(shape output)
+		(at 60.96 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "760efd8b-05f4-4427-9a55-5d37f6f328b2")
+	)
 	(hierarchical_label "ENC_nCS"
 		(shape bidirectional)
 		(at 72.39 76.2 180)
@@ -3221,6 +3430,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 57.15 128.27 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "335e5378-8654-4169-a4df-35a4b843f9cd")
+		(property "Reference" "R23"
+			(at 59.69 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 59.69 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.928 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df422c9a-aba6-441d-bd17-99598a3b0250")
+		)
+		(pin "2"
+			(uuid "5766282f-9448-4909-877c-60a7012ce74a")
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/a48d5ad2-7f28-431e-aea3-372e724af95b"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 78.74 53.34 0)
 		(unit 1)
@@ -3421,7 +3712,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor_NTC")
-		(at 74.93 134.62 90)
+		(at 57.15 116.84 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3432,27 +3723,29 @@
 		(fields_autoplaced yes)
 		(uuid "76aa47cf-59b6-46cb-bfe3-712358579977")
 		(property "Reference" "TH1"
-			(at 75.2475 128.27 90)
+			(at 60.96 115.2524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "Thermistor_NTC"
-			(at 75.2475 130.81 90)
+		(property "Value" "10k"
+			(at 60.96 117.7924 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 134.62 0)
+			(at 57.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3463,7 +3756,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 134.62 0)
+			(at 57.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3474,7 +3767,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 74.93 134.62 0)
+			(at 57.15 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3572,6 +3865,162 @@
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/a48d5ad2-7f28-431e-aea3-372e724af95b"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 57.15 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "806560d1-d58b-4ddc-acce-2fcb58d15ed0")
+		(property "Reference" "#PWR048"
+			(at 57.15 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 57.15 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 57.15 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc532efd-cbb2-4ae7-81f8-d86164e34350")
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/a48d5ad2-7f28-431e-aea3-372e724af95b"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e2ae878-5f30-4a9d-b39a-5b9d5998f16d")
+		(property "Reference" "#PWR052"
+			(at 57.15 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74d54ba4-31de-4946-b9e3-7d4e4d8e4400")
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/a48d5ad2-7f28-431e-aea3-372e724af95b"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)

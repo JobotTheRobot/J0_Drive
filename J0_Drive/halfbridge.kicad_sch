@@ -409,148 +409,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:NetTie_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "NT"
-				(at 0 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NetTie_2"
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Net tie, 2 pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "net tie short"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Net*Tie*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "NetTie_2_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NetTie_2_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1502,121 +1360,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GNDA"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GNDA"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GNDA_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDA_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:VDD"
 			(power global)
 			(pin_numbers
@@ -1927,6 +1670,17 @@
 		)
 		(uuid "644b54e0-e12c-4807-a077-d1e60ce0d7c4")
 	)
+	(text "consider placement for analog"
+		(exclude_from_sim no)
+		(at 171.196 89.916 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left)
+		)
+		(uuid "64888671-8acf-47b9-bac0-cd3909c83c6f")
+	)
 	(text "validate gate resistor value on hardware"
 		(exclude_from_sim no)
 		(at 107.95 55.372 0)
@@ -1957,16 +1711,6 @@
 			)
 		)
 		(uuid "b78fc363-5e1b-4519-a099-24b43dc96084")
-	)
-	(text "GNDA will use same ground plane as GND, just grouped separately"
-		(exclude_from_sim no)
-		(at 209.55 109.728 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-		)
-		(uuid "e7a79594-54a7-40e7-ad31-8c3136accf1e")
 	)
 	(junction
 		(at 154.94 81.28)
@@ -2225,16 +1969,6 @@
 			(type default)
 		)
 		(uuid "2c6f31a8-1664-433c-afb8-191e9cf9f636")
-	)
-	(wire
-		(pts
-			(xy 212.09 101.6) (xy 215.9 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cdb999a-a79f-4794-bea2-95a582c7574d")
 	)
 	(wire
 		(pts
@@ -2628,16 +2362,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 101.6) (xy 207.01 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2a09bf1-eb12-4cae-933a-5e2547817550")
-	)
-	(wire
-		(pts
 			(xy 170.18 59.69) (xy 168.91 59.69)
 		)
 		(stroke
@@ -2843,7 +2567,7 @@
 		(uuid "ded737d7-0879-4f0d-8fe7-ee633f967792")
 	)
 	(symbol
-		(lib_id "power:GNDA")
+		(lib_id "power:GND")
 		(at 168.91 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -2853,8 +2577,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "14f0220c-fd1e-4761-a877-82d76e5a08ed")
-		(property "Reference" "#PWR031"
+		(uuid "02a0e645-faa3-44ae-bd3c-beebdcc1816f")
+		(property "Reference" "#PWR036"
 			(at 168.91 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2865,7 +2589,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 168.91 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2897,7 +2621,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2909,20 +2633,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e500341-1460-4c15-a7b2-82759d60811a")
+			(uuid "e5c3b920-f276-4ce8-8076-cec53e5012cd")
 		)
 		(instances
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
-					(reference "#PWR031")
+					(reference "#PWR036")
 					(unit 1)
 				)
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
-					(reference "#PWR030")
+					(reference "#PWR049")
 					(unit 1)
 				)
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
-					(reference "#PWR025")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -3009,94 +2733,6 @@
 				)
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 209.55 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22a0af12-936b-4226-86e4-fdb5076be8fb")
-		(property "Reference" "NT1"
-			(at 209.55 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 209.55 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 209.55 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ecb679d8-d70f-44df-895e-dfd284f37e93")
-		)
-		(pin "2"
-			(uuid "227fb3fc-b231-4352-8cea-82bceebbb0df")
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
-					(reference "NT1")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
-					(reference "NT3")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
-					(reference "NT2")
 					(unit 1)
 				)
 			)
@@ -3670,6 +3306,92 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 179.07 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71d2f8b2-2658-4f09-bd5b-1809e2722b24")
+		(property "Reference" "#PWR055"
+			(at 179.07 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7038582f-93a6-48ef-8029-25a77d57df49")
+		)
+		(instances
+			(project "J0_Drive"
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
+					(reference "#PWR055")
+					(unit 1)
+				)
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
+					(reference "#PWR057")
+					(unit 1)
+				)
+				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 168.91 58.42 0)
 		(unit 1)
@@ -3750,178 +3472,6 @@
 				)
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 203.2 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86e1900d-5ae6-4207-ac35-350660dd8713")
-		(property "Reference" "#PWR033"
-			(at 203.2 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 203.2 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 203.2 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37474e54-1351-487b-829e-56d74897596f")
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
-					(reference "#PWR033")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
-					(reference "#PWR035")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 179.07 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87ba56cc-1d2c-45c2-964f-587b8e3792e1")
-		(property "Reference" "#PWR019"
-			(at 179.07 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 179.07 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 179.07 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dbff1710-6435-49df-aa4d-376de788d2ad")
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
-					(reference "#PWR019")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
-					(reference "#PWR032")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4774,92 +4324,6 @@
 				)
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
 					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 215.9 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da2d359d-34e3-4b8f-b95b-69297cb94497")
-		(property "Reference" "#PWR036"
-			(at 215.9 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 215.9 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "faec749c-ed38-436f-9db3-48bd3ea9e3bb")
-		)
-		(instances
-			(project "J0_Drive"
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/6aef7631-afbb-44da-a389-54b50bc13d72"
-					(reference "#PWR036")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/c31fb90c-4c28-423d-a096-73daa471d224"
-					(reference "#PWR049")
-					(unit 1)
-				)
-				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16/b0e558b5-dfd9-4dee-aa57-dee08bb4dc56/fb3a9493-dbe2-4190-9fde-cd63f59ef7ad"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)

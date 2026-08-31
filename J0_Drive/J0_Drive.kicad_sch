@@ -7,6 +7,16 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 88.9 83.82) (xy 101.6 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9b1fae-d98a-419d-910f-504df7e26e1d")
+	)
+	(wire
+		(pts
 			(xy 139.7 50.8) (xy 152.4 50.8)
 		)
 		(stroke
@@ -27,6 +37,26 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 78.74) (xy 101.6 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1619102e-634c-4785-9298-708317d52bd0")
+	)
+	(wire
+		(pts
+			(xy 88.9 106.68) (xy 101.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16212c7e-34eb-4879-b778-6985a503a222")
+	)
+	(wire
+		(pts
 			(xy 177.8 127) (xy 190.5 127)
 		)
 		(stroke
@@ -34,6 +64,16 @@
 			(type default)
 		)
 		(uuid "180ddb41-2852-46a7-8839-97bc774f82df")
+	)
+	(wire
+		(pts
+			(xy 88.9 113.03) (xy 101.6 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b715e3-12b6-4e3c-b6a3-a0cf6255c428")
 	)
 	(wire
 		(pts
@@ -67,6 +107,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 101.6) (xy 101.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31c1dc9b-6788-4d77-9c8e-61e5e154a2ed")
+	)
+	(wire
+		(pts
 			(xy 132.08 148.59) (xy 220.98 148.59)
 		)
 		(stroke
@@ -74,6 +124,16 @@
 			(type default)
 		)
 		(uuid "3b2d3dc9-7f12-452a-8001-47da8f29cce4")
+	)
+	(wire
+		(pts
+			(xy 88.9 88.9) (xy 101.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d607d7e-1a1c-41da-8bde-f0d24422cf13")
 	)
 	(wire
 		(pts
@@ -97,6 +157,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 128.27) (xy 101.6 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "527f7e30-83b7-49a0-864c-8cd583485778")
+	)
+	(wire
+		(pts
 			(xy 177.8 40.64) (xy 190.5 40.64)
 		)
 		(stroke
@@ -114,6 +184,16 @@
 			(type default)
 		)
 		(uuid "5735dfcc-6f0d-48dc-8ae8-50a6e0b95545")
+	)
+	(wire
+		(pts
+			(xy 88.9 118.11) (xy 101.6 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58609072-e05d-4a28-8ab0-b96aca0ba970")
 	)
 	(wire
 		(pts
@@ -197,6 +277,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 137.16) (xy 101.6 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "898f83bb-c84a-4efb-8294-f5ac1af5b2e0")
+	)
+	(wire
+		(pts
 			(xy 177.8 121.92) (xy 190.5 121.92)
 		)
 		(stroke
@@ -267,6 +357,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 123.19) (xy 101.6 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe0c384-bce8-4794-9ba0-045c0bc35f5b")
+	)
+	(wire
+		(pts
 			(xy 139.7 40.64) (xy 152.4 40.64)
 		)
 		(stroke
@@ -294,6 +394,16 @@
 			(type default)
 		)
 		(uuid "c8719db2-6552-41f3-9fdc-1b36d7764efb")
+	)
+	(wire
+		(pts
+			(xy 88.9 96.52) (xy 101.6 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90dc71b-70dd-4469-a39e-930768217eb4")
 	)
 	(wire
 		(pts
@@ -915,6 +1025,116 @@
 				(justify left)
 			)
 		)
+		(pin "ENC_A" bidirectional
+			(at 101.6 78.74 180)
+			(uuid "8b051173-313a-490e-8c07-64a1a88136c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_B" bidirectional
+			(at 101.6 83.82 180)
+			(uuid "905ee1c3-9ab0-473a-bfd4-99a6e9ba176b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_CLK" bidirectional
+			(at 101.6 128.27 180)
+			(uuid "d1c4620f-1c49-44e5-86e7-6269a0ea32e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_I{slash}PWM" bidirectional
+			(at 101.6 88.9 180)
+			(uuid "57bbd704-0301-4233-b482-7ae6a975a938")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_MISO" bidirectional
+			(at 101.6 123.19 180)
+			(uuid "d2bad23c-2cb5-4bc8-8fba-64651741b736")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_MOSI" bidirectional
+			(at 101.6 118.11 180)
+			(uuid "f5f12e9b-9cb2-44c6-a163-cd9c3e488c54")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_nCS" bidirectional
+			(at 101.6 113.03 180)
+			(uuid "d74bfb3a-f144-49d2-912b-7d7d2ccdc1b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_U" bidirectional
+			(at 101.6 96.52 180)
+			(uuid "9151e24a-a101-4652-ba3f-c954ab57f243")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_V" bidirectional
+			(at 101.6 101.6 180)
+			(uuid "9b096be5-3ea6-47f2-854b-be5412125596")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_W{slash}PWM" bidirectional
+			(at 101.6 106.68 180)
+			(uuid "464f9522-afb5-4c5c-904f-0c0e4fc35fa2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "T_OUT" output
+			(at 101.6 137.16 180)
+			(uuid "f3c44ea4-97af-4109-b46a-58f1b95131e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "J0_Drive"
 				(path "/00bb46ee-9cfb-4ad9-9820-c6d5e19a8f16"
@@ -1054,6 +1274,16 @@
 		(pin "ENC_W{slash}PWM" bidirectional
 			(at 88.9 106.68 0)
 			(uuid "e4734f33-786a-443f-9b02-db104ef199ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "T_OUT" output
+			(at 88.9 137.16 0)
+			(uuid "bb8093bc-bb20-4e13-9805-3a8423326cfc")
 			(effects
 				(font
 					(size 1.27 1.27)
